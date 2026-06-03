@@ -39,12 +39,12 @@
           <a href="about.html" class="btn btn-ghost">About Me</a>
         </div>
         <p class="hero-meta">
-          Blogs • Landing pages • Campaigns • Social copy • SEO & AI-assisted content
+          Blogs • Landing pages • Campaigns • Social copy • SEO & AI‑assisted content
         </p>
       </div>
-     </section>
+    </section>
 
-    <!-- Featured work -->
+    <!-- Selected work -->
     <section class="section">
       <div class="container">
         <div class="section-header">
@@ -53,13 +53,13 @@
         </div>
         <div class="cards-grid">
           <article class="card">
-            <p class="card-tag">Immigration / Long-form</p>
+            <p class="card-tag">Immigration / Long‑form</p>
             <h3>The EB1A Visa – Ticket to the Land of Your Dreams</h3>
             <p>
               A comprehensive guide that explains EB1A eligibility, documentation, USCIS process,
-              and future trends, ending with a clear conversion-focused CTA.
+              and future trends, ending with a clear conversion‑focused CTA.
             </p>
-            <a href="work.html#eb1a" class="card-link">View details</a>
+            <a href="work.html#eb1a" class="text-link">View details →</a>
           </article>
 
           <article class="card">
@@ -69,27 +69,27 @@
               A narrative positioning Telangana Rising Global Summit 2025 as the launchpad for a
               clean, green, inclusive 2047 roadmap, with FAQs for investors and citizens.
             </p>
-            <a href="work.html#telangana-2047" class="card-link">View details</a>
+            <a href="work.html#telangana-2047" class="text-link">View details →</a>
           </article>
 
           <article class="card">
             <p class="card-tag">Real Estate / Lifestyle</p>
             <h3>Dream Home – Now It’s Not Just a Dream, It’s a Right</h3>
             <p>
-              A housing-focused piece blending emotional storytelling with concrete benefits,
+              A housing‑focused piece blending emotional storytelling with concrete benefits,
               amenities, and a strong call to book a site visit.
             </p>
-            <a href="work.html#dream-home" class="card-link">View details</a>
+            <a href="work.html#dream-home" class="text-link">View details →</a>
           </article>
 
           <article class="card">
-            <p class="card-tag">Copy / Short-form</p>
-            <h3>Taglines, Social Captions & Product Copy</h3>
+            <p class="card-tag">Editorial / Short‑form</p>
+            <h3>Short‑form & Editorial Writing</h3>
             <p>
-              Short, punchy lines and captions, including a tire brand tagline and social copy
-              derived from long-form housing content.
+              Thought‑driven pieces that highlight voice, structure, and clarity in shorter formats,
+              including women‑centric and editorial content.
             </p>
-            <a href="work.html#short-form" class="card-link">View details</a>
+            <a href="work.html#short-form" class="text-link">View details →</a>
           </article>
         </div>
 
@@ -106,7 +106,7 @@
           <h2>Experience at the intersection of content, quality, and AI.</h2>
           <p>
             I’ve worked with Ithaca Technologies, Amazon, and Omics International, producing and reviewing
-            high-volume content, mentoring writers, and maintaining editorial standards across teams.
+            high‑volume content, mentoring writers, and maintaining editorial standards across teams.
           </p>
         </div>
         <div class="pill-list">
@@ -124,7 +124,7 @@
     <div class="container footer-grid">
       <div>
         <p class="footer-logo">KM</p>
-        <p>Content & Copywriter – available for full-time roles and select freelance projects.</p>
+        <p>Content & Copywriter – available for full‑time roles and select freelance projects.</p>
       </div>
       <div class="footer-links">
         <a href="mailto:moulikakancharla28@gmail.com">moulikakancharla28@gmail.com</a>
@@ -132,32 +132,32 @@
       </div>
     </div>
   </footer>
+
   <script>
-(function () {
-  var docEl = document.documentElement;
-  var toggle = document.getElementById('theme-toggle');
-  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  (function () {
+    var docEl = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  // Initial theme based on system preference
-  docEl.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    docEl.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
 
-  function updateLabel() {
-    if (!toggle) return;
-    var isDark = docEl.getAttribute('data-theme') === 'dark';
-    toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
-  }
+    function updateLabel() {
+      if (!toggle) return;
+      var isDark = docEl.getAttribute('data-theme') === 'dark';
+      toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
+    }
 
-  updateLabel();
+    updateLabel();
 
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      var current = docEl.getAttribute('data-theme');
-      var next = current === 'dark' ? 'light' : 'dark';
-      docEl.setAttribute('data-theme', next);
-      updateLabel();
-    });
-  }
-})();
-</script>
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var current = docEl.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        docEl.setAttribute('data-theme', next);
+        updateLabel();
+      });
+    }
+  })();
+  </script>
 </body>
 </html>
