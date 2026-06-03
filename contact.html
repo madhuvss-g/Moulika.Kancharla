@@ -55,7 +55,7 @@
     <div class="container footer-grid">
       <div>
         <p class="footer-logo">KM</p>
-        <p>Content & Copywriter – available for full-time roles and select freelance projects.</p>
+        <p>Content & Copywriter – available for full‑time roles and select freelance projects.</p>
       </div>
       <div class="footer-links">
         <a href="mailto:moulikakancharla28@gmail.com">moulikakancharla28@gmail.com</a>
@@ -63,32 +63,32 @@
       </div>
     </div>
   </footer>
+
   <script>
-(function () {
-  var docEl = document.documentElement;
-  var toggle = document.getElementById('theme-toggle');
-  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  (function () {
+    var docEl = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  // Initial theme based on system preference
-  docEl.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    docEl.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
 
-  function updateLabel() {
-    if (!toggle) return;
-    var isDark = docEl.getAttribute('data-theme') === 'dark';
-    toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
-  }
+    function updateLabel() {
+      if (!toggle) return;
+      var isDark = docEl.getAttribute('data-theme') === 'dark';
+      toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
+    }
 
-  updateLabel();
+    updateLabel();
 
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      var current = docEl.getAttribute('data-theme');
-      var next = current === 'dark' ? 'light' : 'dark';
-      docEl.setAttribute('data-theme', next);
-      updateLabel();
-    });
-  }
-})();
-</script>
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var current = docEl.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        docEl.setAttribute('data-theme', next);
+        updateLabel();
+      });
+    }
+  })();
+  </script>
 </body>
 </html>
