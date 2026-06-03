@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Portfolio | Kancharla Moulika – Content & Copywriter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Writing portfolio of Kancharla Moulika, Content Writer & Copywriter – long-form blogs, summit narratives, and real estate content." />
+  <meta name="description" content="Writing portfolio of Kancharla Moulika – long-form blogs, summit narratives, real estate content, and editorial pieces." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -30,11 +30,11 @@
         <div class="section-header">
           <h1>Writing Portfolio</h1>
           <p>
-            A selection of my work across long‑form blogs, summit and city branding, real estate/lifestyle content,  
+            A selection of my work across long‑form blogs, summit and city branding, real estate/lifestyle content,
             and editorial pieces. Each sample opens in a new tab as a PDF.
           </p>
         </div>
-  
+
         <!-- Long-form Blogs & Guides -->
         <section class="portfolio-section">
           <h2>Long‑form Blogs & Guides</h2>
@@ -42,7 +42,7 @@
             In‑depth, educational pieces that break down complex topics into clear, structured content.
           </p>
           <div class="portfolio-items">
-            <article class="portfolio-item">
+            <article class="portfolio-item" id="eb1a">
               <h3>The EB1A Visa – Ticket to the Land of Your Dreams</h3>
               <p class="portfolio-meta">
                 <span>#Immigration</span> <span>#GlobalTalent</span> <span>#LongForm</span>
@@ -57,15 +57,15 @@
             </article>
           </div>
         </section>
-  
+
         <!-- Summit & City Branding -->
-        <section class="portfolio-section">  
+        <section class="portfolio-section">
           <h2>Summit & City Branding Content</h2>
           <p class="portfolio-section-intro">
-            Narrative pieces that position Telangana as a forward‑looking destination for investment, sustainability, and growth.  
-          </p>  
+            Narrative pieces that position Telangana as a forward‑looking destination for investment, sustainability, and growth.
+          </p>
           <div class="portfolio-items">
-            <article class="portfolio-item">
+            <article class="portfolio-item" id="telangana-2047">
               <h3>Transformative Telangana by 2047 – Telangana Rising Global Summit 2025</h3>
               <p class="portfolio-meta">
                 <span>#Summit</span> <span>#Policy</span> <span>#Vision2047</span>
@@ -78,15 +78,15 @@
                 View sample (PDF) →
               </a>
             </article>
-  
-            <article class="portfolio-item">
+
+            <article class="portfolio-item" id="global-money">
               <h3>Global Money Is Moving – Why Investors Can’t Stop Talking About Telangana Rising Global Summit 2025</h3>
               <p class="portfolio-meta">
                 <span>#Investment</span> <span>#CityBranding</span> <span>#SummitFeature</span>
               </p>
-                <p>
+              <p>
                 A feature article connecting global capital flows and supply‑chain shifts with Telangana’s 3‑trillion‑dollar
-                2047 ambition, using examples like Bharat Future City and Planet Green to make the opportunity tangible.  
+                2047 ambition, using examples like Bharat Future City and Planet Green to make the opportunity tangible.
               </p>
               <a href="Global-Money-Is-Moving.pdf" target="_blank" rel="noopener noreferrer" class="text-link">
                 View sample (PDF) →
@@ -94,7 +94,7 @@
             </article>
           </div>
         </section>
-  
+
         <!-- Real Estate & Housing -->
         <section class="portfolio-section">
           <h2>Real Estate & Housing</h2>
@@ -102,7 +102,7 @@
             Lifestyle‑focused copy for housing projects, highlighting aspirations, amenities, and location.
           </p>
           <div class="portfolio-items">
-            <article class="portfolio-item">
+            <article class="portfolio-item" id="dream-home">
               <h3>Dream Home – Now It’s Not Just a Dream, It’s a Right</h3>
               <p class="portfolio-meta">
                 <span>#RealEstate</span> <span>#Lifestyle</span> <span>#Housing</span>
@@ -117,15 +117,15 @@
             </article>
           </div>
         </section>
-  
+
         <!-- Short-form & Editorial -->
         <section class="portfolio-section">
           <h2>Short‑form & Editorial Pieces</h2>
           <p class="portfolio-section-intro">
-            Concise, opinion‑style and editorial content showcasing voice, structure, and thematic storytelling.
+            Concise, editorial content showcasing voice, structure, and thematic storytelling.
           </p>
           <div class="portfolio-items">
-            <article class="portfolio-item">
+            <article class="portfolio-item" id="short-form">
               <h3>Women & Editorial Writing Samples</h3>
               <p class="portfolio-meta">
                 <span>#Editorial</span> <span>#Opinion</span> <span>#ShortForm</span>
@@ -143,11 +143,12 @@
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <p class="footer-logo">KM</p>
-        <p>Content & Copywriter – available for full-time roles and select freelance projects.</p>
+        <p>Content & Copywriter – available for full‑time roles and select freelance projects.</p>
       </div>
       <div class="footer-links">
         <a href="mailto:moulikakancharla28@gmail.com">moulikakancharla28@gmail.com</a>
@@ -155,32 +156,32 @@
       </div>
     </div>
   </footer>
+
   <script>
-(function () {
-  var docEl = document.documentElement;
-  var toggle = document.getElementById('theme-toggle');
-  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  (function () {
+    var docEl = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  // Initial theme based on system preference
-  docEl.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    docEl.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
 
-  function updateLabel() {
-    if (!toggle) return;
-    var isDark = docEl.getAttribute('data-theme') === 'dark';
-    toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
-  }
+    function updateLabel() {
+      if (!toggle) return;
+      var isDark = docEl.getAttribute('data-theme') === 'dark';
+      toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
+    }
 
-  updateLabel();
+    updateLabel();
 
-  if (toggle) {
-    toggle.addEventListener('click', function () {
-      var current = docEl.getAttribute('data-theme');
-      var next = current === 'dark' ? 'light' : 'dark';
-      docEl.setAttribute('data-theme', next);
-      updateLabel();
-    });
-  }
-})();
-</script>
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var current = docEl.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        docEl.setAttribute('data-theme', next);
+        updateLabel();
+      });
+    }
+  })();
+  </script>
 </body>
 </html>
