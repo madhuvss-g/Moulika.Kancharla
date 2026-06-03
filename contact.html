@@ -63,5 +63,32 @@
       </div>
     </div>
   </footer>
+  <script>
+(function () {
+  var docEl = document.documentElement;
+  var toggle = document.getElementById('theme-toggle');
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Initial theme based on system preference
+  docEl.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+
+  function updateLabel() {
+    if (!toggle) return;
+    var isDark = docEl.getAttribute('data-theme') === 'dark';
+    toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
+  }
+
+  updateLabel();
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var current = docEl.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      docEl.setAttribute('data-theme', next);
+      updateLabel();
+    });
+  }
+})();
+</script>
 </body>
 </html>
